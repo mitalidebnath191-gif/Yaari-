@@ -37,11 +37,12 @@
             background: #ff9966; border: none; border-radius: 25px;
             color: #fff; font-size: 18px; font-weight: bold;
             cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: transform 0.2s; width: 200px;
+            transition: transform 0.2s; width: 250px;
         }
         .btn:active { transform: scale(0.95); }
         
         .btn-yaari { background: #9966ff; }
+        .btn-share { background: #10b981; } /* Notun Share Button er color */
 
         .balloon-container { display: flex; gap: 20px; margin-top: 20px; }
         .balloon {
@@ -99,8 +100,9 @@
         <p style="margin-bottom: 5px; font-size: 14px;">Ekta chobi din:</p>
         <input type="file" id="inputImage" class="input-field" accept="image/*" style="background: white; color: black; font-size:12px;">
         
-        <!-- Birthday ar Yaari Button -->
-        <button class="btn" onclick="startJourney()">Start Magic ✨</button>
+        <!-- 3 te Button add kora holo -->
+        <button class="btn" onclick="startJourney()">Preview Birthday ✨</button>
+        <button class="btn btn-share" onclick="shareBdayLink()">Share Birthday Link 🔗</button>
         <button class="btn btn-yaari" onclick="startYaari()">Yaari 🤝</button>
     </div>
 
@@ -153,8 +155,9 @@
         </div>
     </div>
 
-    <!-- JavaScript Files Link Kora Holo -->
+    <!-- JavaScript Files -->
     <script src="index.js"></script>
     <script src="yaari.js"></script> 
 </body>
 </html>
+
